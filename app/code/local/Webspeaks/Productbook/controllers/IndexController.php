@@ -11,7 +11,6 @@ class Webspeaks_Productbook_IndexController extends Mage_Core_Controller_Front_A
      */
 	public function addtocartAction()
 	{
-		$block = 'Webspeaks_Productbook_Block_Productbook';
 		try{
 			$result = array();
 			$productId = (int) $this->getRequest()->getParam('product');
@@ -24,7 +23,7 @@ class Webspeaks_Productbook_IndexController extends Mage_Core_Controller_Front_A
 			}
 		 
 			$product = Mage::getSingleton('catalog/product')->load($productId);
-			$res = $block::addToCart($product, $qty);
+			$res = Webspeaks_Productbook_Block_Productbook::addToCart($product, $qty);
 			echo json_encode($res);
 		} catch (Exception $e) {
 			$result['status'] = 'error';
