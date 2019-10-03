@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Quickview",
+    "name": "OpenMageModuleFostering\/Quickview",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "Quickview allows you to quickly view and add a product to cart (without opening the product view page).",
     "authors": [
-    {
-        "name": "Arvind Bhardwaj",
-        "email": "bhardwajsonheight@gmail.com"
-    }
-],
+        {
+            "name": "Arvind Bhardwaj",
+            "email": "bhardwajsonheight@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
